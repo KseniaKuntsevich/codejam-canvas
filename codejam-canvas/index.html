@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/style.css" type="text/css">
+
+</head>
+
+<body class="body">
+    <div class="header">
+    </div>
+
+    <div class="main">
+
+        <div class="d-flex justify-content-between">
+            <div>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Show my elements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Create NEW piskel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Create NEW animation</a>
+                    </li>
+                    </li>
+                </ul>
+
+                <ul>Tools
+                    <li class="list-group-item">Brush</li>
+                    <li class="list-group-item">
+                        <div id="editor">
+                            <span>Active color:</span>
+                            <span id="colorState">black<br></span>
+
+                            <input id="colorInp" type="text" name="code" vlaue="black">
+
+                            <div id="colorPicker">
+                                <div class="picker" data-color="#524c4a"></div>
+                                <div class="picker" data-color="#541500"></div>
+                                <div class="picker" data-color="#8569c7"></div>
+                                <div class="picker" data-color="white"></div>
+                            </div>
+
+                        </div>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div id="sizeSwitcher">
+                <ul>Size
+                    <li class="list-group-item" data-type="array" id="frame1">4x4</li>
+                    <li class="list-group-item" data-type="array" id="frame2">32x32</li>
+                    <li class="list-group-item" data-type="image" id="image">Image</li>
+                </ul>
+            </div>
+
+            <canvas data-active-frame="" id="canvas" width="512" height="512"></canvas>
+
+        </div>
+
+    </div>
+
+    <script src="./src/index.js"></script>
+</body>
+
+</html>
