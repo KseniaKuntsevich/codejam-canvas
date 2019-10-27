@@ -17,21 +17,21 @@
     <div class="main">
 
         <div class="d-flex justify-content-between">
-            <div>
+            <div class="flex-column space-around flex-grow-1">
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Show my elements</a>
+                        <a class="nav-link active text-info" href="#">Show my elements</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Create NEW piskel</a>
+                        <a class="nav-link text-info" href="#">Create NEW piskel</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Create NEW animation</a>
+                        <a class="nav-link text-info" href="#">Create NEW animation</a>
                     </li>
                     </li>
                 </ul>
 
-                <ul>Tools
+                <ul class="ul" >Tools
                     <li class="list-group-item">Brush</li>
                     <li class="list-group-item">
                         <div id="editor">
@@ -55,7 +55,7 @@
 
             </div>
 
-            <div id="sizeSwitcher">
+            <div id="sizeSwitcher" class="space-around flex-grow-1" >
                 <ul>Size
                     <li class="list-group-item" data-type="array" id="frame1">4x4</li>
                     <li class="list-group-item" data-type="array" id="frame2">32x32</li>
@@ -63,7 +63,11 @@
                 </ul>
             </div>
 
-            <canvas data-active-frame="" id="canvas" width="512" height="512"></canvas>
+            <div  class="space-around flex-grow-1">
+                <canvas data-active-frame="" id="canvas" width="512" height="512"></canvas>
+            </div>
+
+            
 
         </div>
 
