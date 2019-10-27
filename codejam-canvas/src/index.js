@@ -143,3 +143,11 @@ let canv = new Canvas({
 })
 
 canv.showMatrix();
+
+
+const sizeSwitcher = document.getElementById('sizeSwitcher');
+sizeSwitcher.addEventListener('click', (e) => {
+    let id = e.target.dataset.matrixId;
+    if (id) canv.setActiveMatrix(id);
+    canv.showMatrix();
+});
